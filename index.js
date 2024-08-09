@@ -13,7 +13,7 @@ import Style from '../style/Style'
 import DropDown from '../assets/svg/drop-down.svg'
 
 const TestDropDown = ({
-    data,
+   
     placeholder,
     onSelect,
     label,
@@ -39,7 +39,7 @@ const TestDropDown = ({
     const filteredData = data.filter((item) =>
         item.label.toLowerCase().includes(search.toLowerCase())
     )
-
+const data =[{label:'Abc',value:'abc'}]
     return (
         <View style={[styles.container]}>
             <Text style={[Style.label14, Style.fontMedium, Style.colorBlack]}>
